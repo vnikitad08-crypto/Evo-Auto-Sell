@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "evoasell",
+  "version": "1.0.0",
+  "name": "EvoAsell",
+  "description": "Auto chat messages and nickname highlight for Minecraft 1.21.4",
+  "authors": [
+    "sh1zaExE"
+  ],
+  "contact": {
+    "homepage": "https://github.com/sh1zaExE/evoasell",
+    "sources": "https://github.com/sh1zaExE/evoasell"
+  },
+  "license": "MIT",
+  "icon": "assets/evoasell/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.sh1zaexe.evoasell.EvoAsell"
+    ],
+    "client": [
+      "me.sh1zaexe.evoasell.EvoAsellClient"
+    ],
+    "modmenu": [
+      "me.sh1zaexe.evoasell.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "evoasell.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "fabric-api": "*",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "cloth-config": "*",
+    "modmenu": "*"
+  }
+}
